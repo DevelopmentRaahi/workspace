@@ -2888,7 +2888,7 @@ z-index: -2;
 }
 
 
-.ef-row-2 h3{
+.ef-row-2 h2{
 	font-size: 4.5rem;
 	font-family: Space Grotesk ;
 	text-align: center;
@@ -3140,7 +3140,7 @@ z-index: -2;
   .cf-header *{
 	font-family: Space Grotesk;	
   }
-.cf-header h4{
+.cf-header h2{
 	font-size: 3.4rem;
 	padding: 0rem 1rem;
 	border-radius: 25px;
@@ -3249,6 +3249,22 @@ z-index: -2;
 	align-self: center;
 }
 
+#faq h2 {
+	font-family: Space Grotesk;
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+   }
+
+.accordion-item ul {
+	margin-left: 1.52rem;
+	/* list-style-type: circle; */
+}
+.accordion-item ul li{
+	list-style-type: number;
+}
+
 @media screen and (max-width:900px){
 .ef-content h1,
 .ef-content p{
@@ -3274,7 +3290,7 @@ z-index: -2;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 	}
-	.cf-header h4{
+	.cf-header h2{
 		font-size: 4rem;		
 	}
 }
@@ -3305,7 +3321,7 @@ z-index: -2;
 	.ef-content h1 span{
 		font-size: 3.5rem;
 	}
-	.ef-row-2 h3{
+	.ef-row-2 h2{
 		font-size: 3rem;
 	}
 	.claud-content p{
@@ -3314,7 +3330,7 @@ z-index: -2;
 	
 }
 @media screen and (max-width:600px) {
-	.cf-header h4{		
+	.cf-header h2{		
 		width: 80%;
 	}
 	.claud-content h3{

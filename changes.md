@@ -23,7 +23,7 @@ EDR is important because it:
 ●	Real-time Threat Detection
 ●	Investigation and analysis of incidents
 ●	Automated response for threat mitigation.
-●	Protect yourself from advanced malware, ransomware and fileless attacks.
+●	Protect yourself from advanced malware, ransomware and file less attacks.
 3. What is EDR?(h3)
 EDR tools use machine learning, threat intelligence, and behavioral analysis to detect and respond malicious activity. The key components are:
 ●	Continuous monitoring.

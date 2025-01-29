@@ -681,7 +681,7 @@ footer,
   transition: 0.3s;
 }
 
-.services .service-item h3 {
+.services .service-item h4 {
   font-size: 24px;
   font-weight: 600;
 }
@@ -824,7 +824,7 @@ footer,
     font-weight: 600;
   }
 
-  .services .service-item h3 {
+  .services .service-item h4 {
     font-weight: 600;
     font-size: 20px;
   }
