@@ -148,8 +148,12 @@
 
     new Swiper(".mySwiper", swiperConfig);
   }
-  initializeSwiper();
-  window.addEventListener("resize", function () {
+  if (document.querySelector(".mySwiper")) {
     initializeSwiper();
+  }
+  window.addEventListener("resize", function () {
+    if (document.querySelector(".mySwiper")) {
+      initializeSwiper();
+    }
   });
 })();
