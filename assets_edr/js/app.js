@@ -157,3 +157,25 @@
     }
   });
 })();
+
+
+// form js
+
+// form js
+<script>
+  const textarea = document.getElementById('query');
+  const wordCount = document.getElementById('wordCount');
+
+  textarea.addEventListener{('input', () => {
+    const words = textarea.value.trim().split(/\s+/);
+
+    if (words.length > 80) {
+      // limit to 80 words
+      textarea.value = words.slice(0, 80).join(' ');
+    }
+
+    // update live word count
+    wordCount.textContent = `${words.length}/80 words`;
+  })};
+</script>
+
