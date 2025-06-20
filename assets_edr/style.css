@@ -3397,8 +3397,8 @@ color: #e0e0e0;
 .contact-form-z {
   background: white;
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 800px;
 }
@@ -3408,6 +3408,7 @@ color: #e0e0e0;
   margin-bottom: 1.5rem;
   font-family: 'Space Grotesk', sans-serif;
   color: #333;
+  font-weight: bold;
 }
 
 .form-row-z {
@@ -3425,7 +3426,8 @@ color: #e0e0e0;
 
 .form-group-z label {
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: bold;
 }
 
 .form-group-z input,
@@ -3435,10 +3437,11 @@ color: #e0e0e0;
   border-radius: 6px;
   font-size: 1rem;
   font-family: inherit;
+  outline: none;
 }
 
 .word-count-z {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #555;
   margin-top: 5px;
   text-align: right;
@@ -3447,7 +3450,7 @@ color: #e0e0e0;
 .submit-btn-z {
   width: 100%;
   padding: 0.9rem;
-  background-color: teal;
+  background-color: #25d366;
   color: white;
   font-size: 1.1rem;
   font-family: 'Space Grotesk', sans-serif;
@@ -3455,10 +3458,11 @@ color: #e0e0e0;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-weight: bold;
 }
 
 .submit-btn-z:hover {
-  background-color: #006666;
+  background-color: #26af59;
 }
 
 @media (max-width: 600px) {
