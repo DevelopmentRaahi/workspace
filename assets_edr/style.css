@@ -3445,15 +3445,20 @@ color: #e0e0e0;
   font-size: 0.8rem;
   color: #555;
   margin-top: 5px;
-  text-align: right;
+  text-align: center;
+}
+
+.form-btn-container-z {
+  text-align: center; /* center align inside */
+  margin-top: 1rem;
 }
 
 .submit-btn-z {
-  width: 100%;
-  padding: 0.9rem;
+  display: inline-block;      /* Only take the space it needs */
+  padding: 0.9rem 2rem;
   background-color: #25d366;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: 'Space Grotesk', sans-serif;
   border: none;
   border-radius: 8px;
@@ -3461,10 +3466,10 @@ color: #e0e0e0;
   transition: background 0.3s ease;
   font-weight: bold;
 }
-
 .submit-btn-z:hover {
   background-color: #26af59;
 }
+
 
 @media (max-width: 600px) {
   .form-row-z {
