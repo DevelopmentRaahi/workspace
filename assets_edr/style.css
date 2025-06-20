@@ -2872,7 +2872,8 @@ z-index: -2;
 }
 
 .e-btn a {
-  background-color: teal;
+  /* background-color: teal; */
+  background-color: #25d366;
   color: #ffffff;
   padding: 0.9rem 1.4rem 0.6rem 1.4rem;
   display: inline-block;
