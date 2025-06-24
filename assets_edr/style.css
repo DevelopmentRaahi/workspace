@@ -2885,7 +2885,7 @@ z-index: -2;
 }
 .e-btn a:hover{
 color: #e0e0e0;
-		background-color: teal;
+		background-color: #25d366;
 	border-radius: 1.4rem;
 }
 /* .ef-content p + a {
@@ -3386,6 +3386,7 @@ color: #e0e0e0;
 
 
 /* form css */
+/* 
 .form-container-z {
   display: flex;
   justify-content: center;
@@ -3427,7 +3428,6 @@ color: #e0e0e0;
 
 .form-group-z label {
   margin-bottom: 0.5rem;
-  /* font-weight: 600; */
   font-weight: bold;
 }
 
@@ -3449,12 +3449,12 @@ color: #e0e0e0;
 }
 
 .form-btn-container-z {
-  text-align: center; /* center align inside */
+  text-align: center; 
   margin-top: 1rem;
 }
 
 .submit-btn-z {
-  display: inline-block;      /* Only take the space it needs */
+  display: inline-block;      
   padding: 0.9rem 2rem;
   background-color: #25d366;
   color: white;
@@ -3475,4 +3475,4 @@ color: #e0e0e0;
   .form-row-z {
     flex-direction: column;
   }
-}
+} */
