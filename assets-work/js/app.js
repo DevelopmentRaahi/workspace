@@ -156,7 +156,51 @@
       initializeSwiper();
     }
   });
+  
 })();
+ const imgUrls = [
+    'https://lh3.googleusercontent.com/lnKMKzG04slLdUqd5Mi4Jyur9xq2nEWkyF4NVo2gY9pcWOxa0-Fj_gbLwm44Gf-BrAHkAiL94VPriLKJWvfq94X6cLT7TpXgdg-4=e365-pa-nu-rw-w1368',
+    'https://lh3.googleusercontent.com/50hgC680XBanADo74LgX_PJTNZoBVyle3yj0BztzOiK7jOC4frtlgZNwKvtA10u7h6c34lYtgyTIXTlNZPaDFzH6Ks0MuqMRmCCM9w=e365-pa-nu-s0-rw',
+    'https://lh3.googleusercontent.com/0R1T21INQyD736gHz7f-ap6h58TNp9enu7RBl4e_shCfw_byTq4SGwXLhPJCBNwk5Z-2Lyts5yeQoejsdCpWmW_RnVrNgb7JIkSP=e365-pa-nu-rw-w1404',
+    'https://lh3.googleusercontent.com/rc_GCRnepGXUH9_0rowtCIARmhJyV-ZlMMyouzKGd8VQ-BiuucImt3fHuKv8drVj3UrKV11nQM1-o5yJTfsfy9gj8oahQrOl-dP1=e365-pa-nu-s0-rw'
+]
+  
+const secondUrls = [
+  'https://lh3.googleusercontent.com/1jTLIUKEd2J48EJ-OzjO5eGVdpGI0fhsayh9iP9_Jfw_FOlLqDajv5RWB33Iwc9KEwwis8jHpn534LUDfggbFRIA3Xun-REuHi9z=e365-pa-nu-s0-rw',
+  'https://lh3.googleusercontent.com/kJDQVDm26HvxOqmOf1VmJOY5RNQX80F_vGQfZ48VC1qbE6N04EjJFVHPpJ9qZSH2H-In57stc9W3UwmAWQPzMsk-410ap4Oovpnr=e365-pa-nu-s0-rw',
+  'https://lh3.googleusercontent.com/ke4J0YBy41aiZcvyVVTbMpOg6n891sotgktz7XCRIm6oxyLGqbujD_DuQaAoDpGodQousVz-oYwrYtgmT6yUL1TA-ZA1AhJ4Y8gJ1Q=e365-pa-nu-s0-rw',
+  'https://lh3.googleusercontent.com/tltbnMK4PzheD-uTJU7dI-4aW4D8aH6rjFDMen-Mjaq5yVBfl5qoA-c20LFBTfmZSg6DSFH5eVTE6K4wndOiGHyRdMiWIO4MDOo_=e365-pa-nu-s0-rw'
+]
+function initHelpBuss(containerId) {
+  const activeDropdown = document.querySelectorAll(`${containerId} .hb-header`);
+  const allDropDown = document.querySelectorAll(`${containerId} .hb-header h3`);
+  const contentBody = document.querySelectorAll(`${containerId} .hb-header .hb-body`);
+  const targetImg = document.querySelector(`${containerId} #hb-img img`);
+
+  allDropDown.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      // removing active class
+      contentBody.forEach(item => item.classList.remove('active'));   
+      activeDropdown.forEach(item => item.classList.remove('active'));
+      allDropDown.forEach(item => item.classList.remove('active'));
+
+      // adding active class
+      activeDropdown[index].classList.add('active');
+      allDropDown[index].classList.add('active');
+      contentBody[index].classList.add('active');
+      if(containerId === "#help-buss_second"){
+        targetImg.src = secondUrls[index];
+        return
+      }
+      if(imgUrls[index]){
+        targetImg.src = imgUrls[index];
+      }
+      
+    })
+  })
+}
+initHelpBuss("#help-buss");
+initHelpBuss("#help-buss_second");
 
 
 // form js

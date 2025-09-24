@@ -2159,7 +2159,16 @@ right: 45%;
 }
 
 /* benefit */
-
+.benefit-row .benefit-content h4{
+	font-family: "Space Grotesk";
+	font-size: 1.8rem;
+}
+.benefit-row .benefit-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+}
 .benefit-link a{
 	display: inline-block;
 	font-size: 1.5rem;
@@ -2167,6 +2176,7 @@ right: 45%;
 	text-decoration: underline;
 	font-family: "Space Grotesk";
 	padding: 1.2rem 0;
+	margin-bottom: 2rem;
 }
 .benefit-link a:hover{
 	color: #0755f0;
@@ -2177,7 +2187,145 @@ right: 45%;
 	margin-bottom: 2rem;
 	display: inline-block;
 }
+.cta-section{
+	padding: 4rem 0;	
+	text-align: center;
+	font-family: "Space Grotesk";
+	margin-bottom: 4rem;
+}
+.cta-section >div{
+	background-color: #f4f6fc;
+	padding: 5rem 0;
+}
+.cta-row h2{
+	margin-top: 1.5rem;
+	font-family: "Space Grotesk";
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.cta-row p{
+	font-size: 1.5rem;
+	color: #555a5c;	
+}
+.cta-row a{
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1.3rem;
+	/* color: #fff;	 */
+	padding: 0.7rem 1.5rem;	
+	border-radius: 0.3rem;
+}
+.cta-row a:hover{
+	background-color: #0755f0;
+	color: #fff;
+}
 
+/* include notes paragraph */
+.include-note{
+	margin-top: 1.5rem;
+	padding-top: 2.5rem;
+}
+	
+.include-note  p{
+	font-size: 1.3rem;
+	color: #555a5c;
+	font-family: "Space Grotesk";
+}
+.helpful-business{
+	padding: 2rem 0;
+	font-family: "Space Grotesk";
+}
+.helpful-business h2, .helpful-business h3{
+	font-family: "Space Grotesk";
+}
+
+.helpful-business h2{
+	font-size: 3.5rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.hb-row_2{
+	align-items: center;
+}
+.hb-header{
+	padding-left: 1rem ;
+	border-left: 3px solid #7da8ff56;
+	margin-bottom: 8px;
+}
+.hb-header h3{
+	width: 88%;
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
+	cursor: pointer;
+	color: #555a5c;	
+}
+.hb-header .hb-body p{	
+	font-size: 1.3rem;
+	width: 85%;
+	color: #555a5c;
+}
+.hb-header .hb-body{
+	opacity: 0;
+	max-height: 0;
+	visibility: hidden;	
+}
+/* .hb-row_2 > div:nth-of-type(1) .hb-header:not(:first-child) .hb-body{
+	display: none;
+} */
+.hb-body.active{
+	opacity: 1;
+	max-height: fit-content;
+	visibility: visible;	
+	transition: all 0.5s ease-in;
+}
+.hb-header.active{		
+	border-left: 3px solid #7da8ff;
+}
+.hb-header h3.active{
+	color: initial;
+	cursor: pointer;
+}
+
+/* faq workspace */
+.faq-boxes{
+	padding: 3.2rem 0;
+	font-family: "Space Grotesk";
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+.faq-box{
+	border: 1px solid #bcbec391;
+	padding: 2rem ;
+	border-radius: 0.5rem;
+	width: 70%;
+
+}
+.faq-box h3{
+	font-family: "Space Grotesk";
+	font-size: 1.8rem;
+	margin-bottom: 1.2rem;
+	cursor: pointer;
+	color: #555a5c;
+}
+.faq-box p{
+	font-size: 1.3rem;
+	color: #555a5c;
+}
+.faq-box a{	
+	font-size: 1.2rem;
+	color: #1a73e8;
+	display: inline-block;
+	border: 1px solid #8a8a8a4d;	
+	padding: 0.6rem 1rem;
+	border-radius: 0.2rem;
+	margin-top: 1rem;
+}
+.faq-box a:hover{
+	color: #1a73e8;
+    border: 1px solid #8a8a8a4d;	
+	background-color: #f1f1f1c2;
+}
 
 /* ======== Media CSS Start ======== */
 
