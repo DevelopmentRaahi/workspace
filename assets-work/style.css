@@ -2335,7 +2335,26 @@ right: 45%;
 }
 
 /* ======== Media CSS Start ======== */
-
+@media (max-width: 1024px) {
+	.workspace-grid{	
+		grid-template-columns: repeat(8, 1fr);
+		gap: 1rem;
+	}
+}
+@media (max-width: 768px) {
+	.workspace-grid{	
+		grid-template-columns: repeat(7, 1fr);		
+		gap: 1rem;
+	}
+	
+}
+@media (max-width: 600px) {
+	.workspace-grid{	
+		grid-template-columns: repeat(4, 1fr);			
+		gap: 1rem;
+	}
+	
+}
 
 @media (max-width:767px) {
 html, body{
