@@ -2247,6 +2247,13 @@ right: 45%;
 .hb-row_2{
 	align-items: center;
 }
+.hb-body {
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+	 overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
 .hb-header{
 	padding-left: 1rem ;
 	border-left: 3px solid #7da8ff56;
