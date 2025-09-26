@@ -159,16 +159,16 @@
   
 })();
  const imgUrls = [
-  'assets-work/img/boxes/1.webp',
-  'assets-work/img/boxes/2.webp',
-  'assets-work/img/boxes/3.webp',
-  'assets-work/img/boxes/4.webp',   
+  'googleworkspace/img/boxes/1.webp',
+  'googleworkspace/img/boxes/2.webp',
+  'googleworkspace/img/boxes/3.webp',
+  'googleworkspace/img/boxes/4.webp',   
  ]  
 const secondUrls = [
-  'assets-work/img/boxes/5.webp',
-  'assets-work/img/boxes/6.webp',
-  'assets-work/img/boxes/7.webp',
-  'assets-work/img/boxes/8.webp',
+  'googleworkspace/img/boxes/5.webp',
+  'googleworkspace/img/boxes/6.webp',
+  'googleworkspace/img/boxes/7.webp',
+  'googleworkspace/img/boxes/8.webp',
 ]
 function initHelpBuss(containerId) {
   const activeDropdown = document.querySelectorAll(`${containerId} .hb-header`);
