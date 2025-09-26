@@ -2340,6 +2340,13 @@ right: 45%;
     border: 1px solid #8a8a8a4d;	
 	background-color: #f1f1f1c2;
 }
+.faq h2 {
+	font-family: Space Grotesk;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+   }
 
 
 /* ======== Media CSS Start ======== */
@@ -2351,10 +2358,13 @@ right: 45%;
 	.workspace-hero .row > div{
 		gap: 0.7rem;
 	}
-	.workspace-row h1,
+	.workspace-row h1{
+		font-size: 3.5rem;
+	}
 	.include-row h2,
 	.helpful-business h2,
-	.cta-row h2{
+	.cta-row h2,
+	.faq h2{
 		font-size: 2.5rem;
 	}
 	/* .include-row_2{
@@ -2362,7 +2372,7 @@ right: 45%;
 	} */
 	 
 	.workspace-row p{
-		font-size: 1.1rem;
+		font-size: 1.5rem;
 	}
 	
 }
@@ -2383,7 +2393,31 @@ right: 45%;
 	.workspace-grid{	
 		grid-template-columns: repeat(4, 1fr);			
 		gap: 1rem;
+	}
+	.workspace-row h1{
+		font-size: 2.5rem;
 	}	
+	.workspace-row p{
+		font-size: 1.3rem;
+	}
+	.include-row h2, .helpful-business h2, .cta-row h2, .faq h2,.bene-bf h3{
+		font-size: 2rem;
+	}
+	.benefit-link a{
+		font-size: 1.2rem;
+	}
+	.cta-section{
+		padding: 0;
+	}
+	.benefit-row .benefit-content h4{
+		font-size: 1.6rem;
+	}
+	.benefit-content p{
+		font-size: 1.2rem;
+	}
+	.faq h2{
+		margin-bottom: 0;
+	}
 	
 }
 
@@ -3724,13 +3758,13 @@ color: #e0e0e0;
 	align-self: center;
 }
 
-#faq h2 {
+/* .faq h2 {
 	font-family: Space Grotesk;
 	text-align: center;
 	font-size: 3rem;
 	font-weight: 500;
 	margin-bottom: 2rem;
-   }
+   } */
 
 .accordion-item ul {
 	margin-left: 1.52rem;
