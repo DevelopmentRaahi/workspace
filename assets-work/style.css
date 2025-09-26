@@ -1983,6 +1983,9 @@ right: 45%;
 .workspace-include{
 	padding-block: 6rem;
 }
+.workspace-include >div{
+	overflow-x: hidden;
+}
 .include-row{
 	/* align-items: center; */
 	text-align: center;
@@ -2019,10 +2022,11 @@ right: 45%;
 
 /* second row_2 */
 .include-row_2{
-	padding-top: 7rem;
+	width: 100%;
+	padding-top: 7rem;		
 }
 .include-row_2 > div{
-	padding: 1rem;
+	padding: 1rem;	  	
 }
 .include-row_2 > div:nth-child(2){
 	position: relative;	
@@ -2337,6 +2341,7 @@ right: 45%;
 	background-color: #f1f1f1c2;
 }
 
+
 /* ======== Media CSS Start ======== */
 @media (max-width: 1024px) {
 	.workspace-grid{	
@@ -2355,9 +2360,11 @@ right: 45%;
 	/* .include-row_2{
 		gap: 3.5rem;
 	} */
+	 
 	.workspace-row p{
 		font-size: 1.1rem;
 	}
+	
 }
 @media (max-width: 996px){
 	.faq-boxes{
@@ -2376,7 +2383,7 @@ right: 45%;
 	.workspace-grid{	
 		grid-template-columns: repeat(4, 1fr);			
 		gap: 1rem;
-	}
+	}	
 	
 }
 
@@ -2387,6 +2394,16 @@ html, body{
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden;
+}
+.faq-boxes{
+	flex-direction: column;
+}
+
+.include-row_2 > div:nth-child(2){
+	margin-top: 3.6rem;
+}
+.include-row_2{
+	gap: 1rem;
 }
 .logo-main-head {
 	position: absolute;
